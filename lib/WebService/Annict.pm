@@ -4,6 +4,30 @@ use strict;
 use warnings;
 
 our $VERSION = "0.01";
+use JSON;
+use URI;
+
+use WebService::Annict::Works;
+
+require LWP::UserAgent;
+require HTTP::Request;
+require HTTP::Request::Common;
+
+sub new {
+  my ($class, $args) = @_;
+  my $access_token = $args->{access_token};
+  my $ua = LWP::UserAgent->new({
+    agent => "Perl5 WebService::Annict/$VERSION",
+    default_headers => HTTP::Headers->new({
+      Authorization => "Bearer $access_token",
+    }),
+  });
+
+  bless {
+    works => Works->new($ua),
+    #me => {},
+  }, $class;
+}
 
 
 
@@ -36,4 +60,3 @@ it under the same terms as Perl itself.
 nukosuke E<lt>nukosuke@shibuya.techE<gt>
 
 =cut
-
