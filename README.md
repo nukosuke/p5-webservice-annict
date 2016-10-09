@@ -9,10 +9,7 @@ WebService::Annict - Annict API interface
 
 # DESCRIPTION
 
-- https://annict.com
-- https://annict.wikihub.io
-
-    WebService::Annict is Annict API interface
+WebService::Annict is Annict API interface
 
 # LICENSE
 
@@ -24,15 +21,3 @@ it under the same terms as Perl itself.
 # AUTHOR
 
 nukosuke <nukosuke@shibuya.tech>
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 46:
-
-    '=item' outside of any '=over'
-
-- Around line 53:
-
-    You forgot a '=back' before '=head1'

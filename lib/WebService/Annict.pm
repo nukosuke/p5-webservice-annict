@@ -43,10 +43,6 @@ WebService::Annict - Annict API interface
 
 =head1 DESCRIPTION
 
-=item https://annict.com
-
-=item https://annict.wikihub.io
-
 WebService::Annict is Annict API interface
 
 
