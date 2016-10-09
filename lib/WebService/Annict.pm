@@ -3,29 +3,26 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
-use JSON;
-use URI;
-
+use LWP::UserAgent;
+use HTTP::Headers;
 use WebService::Annict::Works;
 
-require LWP::UserAgent;
-require HTTP::Request;
-require HTTP::Request::Common;
+our $VERSION = "0.01";
 
 sub new {
-  my ($class, $args) = @_;
-  my $access_token = $args->{access_token};
-  my $ua = LWP::UserAgent->new({
+  my ($class, %args) = @_;
+  my $access_token = %args{access_token};
+  my $ua = LWP::UserAgent->new(
     agent => "Perl5 WebService::Annict/$VERSION",
-    default_headers => HTTP::Headers->new({
-      Authorization => "Bearer $access_token",
-    }),
-  });
+    default_headers => HTTP::Headers->new(
+      "Content-Type" => "application/json",
+      Accept         => "application/json",
+      Authorization  => "Bearer $access_token",
+    ),
+  );
 
   bless {
-    works => Works->new($ua),
-    #me => {},
+    works => WebService::Annict::Works->new($ua),
   }, $class;
 }
 
@@ -38,7 +35,7 @@ __END__
 
 =head1 NAME
 
-WebService::Annict - It's new $module
+WebService::Annict - Annict API interface
 
 =head1 SYNOPSIS
 
@@ -46,7 +43,12 @@ WebService::Annict - It's new $module
 
 =head1 DESCRIPTION
 
-WebService::Annict is ...
+=item https://annict.com
+
+=item https://annict.wikihub.io
+
+WebService::Annict is Annict API interface
+
 
 =head1 LICENSE
 
