@@ -20,4 +20,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-nukosuke <nukosuke@shibuya.tech>
+nukosuke <nukosuke@cpan.org>

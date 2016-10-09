@@ -1,7 +1,7 @@
 {
    "abstract" : "Annict API interface",
    "author" : [
-      "nukosuke <nukosuke@shibuya.tech>"
+      "nukosuke <nukosuke@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.4, CPAN::Meta::Converter version 2.150005",
@@ -71,7 +71,8 @@
    "version" : "0.01",
    "x_authority" : "cpan:NUKOSUKE",
    "x_contributors" : [
-      "nukosuke <nukosuke@users.noreply.github.com>"
+      "nukosuke <nukosuke@users.noreply.github.com>",
+      "nukosuke <nukosuke@shibuya.tech>"
    ],
    "x_serialization_backend" : "JSON::PP version 2.27300"
 }
