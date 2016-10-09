@@ -55,6 +55,6 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-nukosuke E<lt>nukosuke@shibuya.techE<gt>
+nukosuke E<lt>nukosuke@cpan.orgE<gt>
 
 =cut
