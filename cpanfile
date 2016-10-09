@@ -6,6 +6,10 @@ requires 'HTTP::Message', '6.11';
 requires 'LWP::UserAgent', '6.15';
 requires 'LWP::Protocol::https', '6.06';
 
+on 'develop' => sub {
+    requires 'Software::License';
+};
+
 on 'test' => sub {
     requires 'Test::More', '0.98';
 };
