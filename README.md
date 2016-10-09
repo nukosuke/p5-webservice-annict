@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nukosuke/p5-webservice-annict.svg?branch=master)](https://travis-ci.org/nukosuke/p5-webservice-annict)
+[![Build Status](https://travis-ci.org/nukosuke/p5-WebService-Annict.svg?branch=master)](https://travis-ci.org/nukosuke/p5-WebService-Annict)
 # NAME
 
 WebService::Annict - Annict API interface
