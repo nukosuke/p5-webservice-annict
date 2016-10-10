@@ -5,13 +5,16 @@ use warnings;
 
 use LWP::UserAgent;
 use HTTP::Headers;
+
 use WebService::Annict::Works;
+use WebService::Annict::Episodes;
+use WebService::Annict::Records;
 
 our $VERSION = "0.01";
 
 sub new {
   my ($class, %args) = @_;
-  my $access_token = %args{access_token};
+  my $access_token = $args{access_token};
   my $ua = LWP::UserAgent->new(
     agent => "Perl5 WebService::Annict/$VERSION",
     default_headers => HTTP::Headers->new(
