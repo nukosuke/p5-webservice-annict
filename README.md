@@ -15,8 +15,7 @@ WebService::Annict is Annict API interface
 
 Copyright (C) nukosuke.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This software is released under the MIT License, see LICENSE.
 
 # AUTHOR
 
