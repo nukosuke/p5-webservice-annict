@@ -68,11 +68,11 @@
          "web" : "https://github.com/nukosuke/p5-webservice-annict"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:NUKOSUKE",
    "x_contributors" : [
-      "nukosuke <nukosuke@users.noreply.github.com>",
-      "nukosuke <nukosuke@shibuya.tech>"
+      "nukosuke <nukosuke@shibuya.tech>",
+      "nukosuke <nukosuke@users.noreply.github.com>"
    ],
    "x_serialization_backend" : "JSON::PP version 2.27300"
 }
