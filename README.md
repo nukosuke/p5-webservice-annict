@@ -1,3 +1,4 @@
+[![CPAN version](https://badge.fury.io/pl/WebService-Annict.svg)](https://badge.fury.io/pl/WebService-Annict)
 [![Build Status](https://travis-ci.org/nukosuke/p5-webservice-annict.svg?branch=master)](https://travis-ci.org/nukosuke/p5-webservice-annict)
 # NAME
 
